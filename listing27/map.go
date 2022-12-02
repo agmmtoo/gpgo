@@ -1,0 +1,14 @@
+package main
+
+import "fmt"
+
+func main() {
+	var soup map[string]int
+	fmt.Println(soup == nil)
+	measurement, ok := soup["onion"]
+	if ok {
+		fmt.Println(measurement)
+	}
+	fmt.Println(measurement, ok, len(soup))
+}
+
